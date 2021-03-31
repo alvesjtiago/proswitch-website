@@ -1,7 +1,16 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import { useHotkeys } from 'react-hotkeys-hook'
+
+const downloadUrl =
+  'https://github.com/alvesjtiago/proswitch/releases/download/v1.0.0/Proswitch-darwin-x64-1.0.0.zip'
 
 export default function Home() {
+  useHotkeys('command+option+1', () => {
+    window.open(downloadUrl, '_blank')
+    return
+  })
+
   return (
     <div className={styles.container}>
       <Head>
@@ -14,7 +23,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <a href="https://github.com/alvesjtiago/proswitch/releases/download/v1.0.0/Proswitch-darwin-x64-1.0.0.zip">
+        <a href={downloadUrl}>
           <img
             src="/switcher.svg"
             alt="Prowswitch Command"
