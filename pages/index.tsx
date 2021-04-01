@@ -21,7 +21,7 @@ export default function Home() {
         />
         <meta
           name="og:image"
-          content="https://proswitch.tiagoalves.me/switcher.svg"
+          content="https://proswitch.tiagoalves.me/switcher.png"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
