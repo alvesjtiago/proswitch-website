@@ -19,6 +19,10 @@ export default function Home() {
           name="description"
           content="A status bar Mac application to seamlessly switch between Chrome profiles."
         />
+        <meta
+          name="og:image"
+          content="https://proswitch.tiagoalves.me/switcher.svg"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
