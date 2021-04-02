@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 const downloadUrl =
-  'https://github.com/alvesjtiago/proswitch/releases/download/v1.0.1/Proswitch.zip'
+  'https://github.com/alvesjtiago/proswitch/releases/download/v1.0.2/Proswitch.zip'
 
 export default function Home() {
   useHotkeys('command+option+1', () => {
